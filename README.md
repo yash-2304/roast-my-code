@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔥 Roast My Code
 
-## Getting Started
+An AI-powered web app that brutally roasts your code, gives actionable feedback, and suggests improved versions — all in real time.
 
-First, run the development server:
+## 🚀 Live Demo
+👉 https://roast-my-code-mu.vercel.app
 
-```bash
+---
+
+## ✨ Features
+
+- 🧠 AI-generated **humorous code roasts**
+- 🛠️ Structured **feedback** (Bugs, Optimization, Readability)
+- 🔧 **Improved code suggestions**
+- ⚡ Real-time response using API routes
+- 🎨 Clean, animated UI with Tailwind CSS
+- 📋 One-click **copy improved code**
+- 💡 Handles invalid AI responses gracefully
+
+---
+
+## 🏗️ Tech Stack
+
+- **Frontend:** Next.js 14, React, TypeScript  
+- **Backend:** Next.js API Routes  
+- **Styling:** Tailwind CSS  
+- **Syntax Highlighting:** PrismJS  
+- **Deployment:** Vercel  
+
+---
+
+## 📂 Project Structure
+
+app/
+├── page.tsx          # Main UI (client-side)
+├── layout.tsx        # Metadata & layout
+└── api/
+└── roast/
+└── route.ts # AI logic & API handler
+
+---
+
+## ⚙️ Setup Locally
+
+``` bash
+git clone https://github.com/yash-2304/roast-my-code.git
+cd roast-my-code
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+``` 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a .env.local file:
+OPENAI_API_KEY=your_api_key_here
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🚀 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployed on Vercel with:
+	•	Environment variables configured
+	•	Automatic CI/CD from GitHub
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+💡 How It Works
+	1.	User inputs code
+	2.	Frontend sends request to /api/roast
+	3.	Backend calls AI model
+	4.	Response is structured into:
+	•	Roast
+	•	Feedback
+	•	Improved Code
+	5.	UI renders animated output
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧪 Error Handling
+	•	Guards against malformed AI responses
+	•	Fallback UI for failed requests
+	•	Prevents showing unchanged code as “improved”
 
-## Deploy on Vercel
+⸻
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔮 Future Improvements
+	•	🎚️ Adjustable roast intensity (fun mode)
+	•	🌐 Better language detection
+	•	🔄 Side-by-side code comparison
+	•	🔗 Shareable roast links
+	•	📊 Code quality scoring system
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⸻
+
+👨‍💻 Author
+
+Yash Prajapati
+	•	🔗 LinkedIn: https://www.linkedin.com/in/yash-prajapati-29a423187
+	•	💻 GitHub: https://github.com/yash-2304
+
+⸻
+
+⭐ Show Some Love
+
+If you like this project:
+	•	⭐ Star the repo
+	•	🍴 Fork it
+	•	🔥 Roast your friends’ code
+
+⸻
+
+⚠️ Disclaimer
+
+This app is for fun + learning purposes.
+Roasts may hurt feelings… proceed at your own risk 😈
+
+
+
