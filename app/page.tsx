@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import "prismjs/themes/prism-tomorrow.css";
+// @ts-ignore
 import Prism from "prismjs";
 
 interface RoastResult {
